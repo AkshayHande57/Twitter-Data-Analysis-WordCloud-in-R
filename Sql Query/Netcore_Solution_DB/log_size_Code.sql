@@ -1,0 +1,2 @@
+DBCC SQLPERF('logspace')
+checkpoint

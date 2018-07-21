@@ -1,0 +1,29 @@
+IPORO =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.176.5.16)(PORT = 1529))
+     (CONNECT_DATA =
+      (SERVICE_NAME = IPORO)
+      (SERVER = DEDICATED)
+    )
+  )
+
+
+IPOARCH =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.176.5.16)(PORT = 1529))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = IPOARCH)
+    )
+  )
+
+
+ORSPRO =
+ (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 10.176.5.16)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (service_name = orspro )
+    )
+  )

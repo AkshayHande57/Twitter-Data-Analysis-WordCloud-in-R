@@ -1,0 +1,59 @@
+select * into EQ_contract_note_details_All_records
+from EQ_Contract_note_details_April 
+union 
+select * from EQ_Contract_note_details_May
+union 
+select * from [dbo].[EQ_Contract_note_details_June]
+union 
+select * from [dbo].[EQ_Contract_note_details_July]
+union 
+select * from [dbo].[EQ_Contract_note_details_August]
+union 
+select * from [dbo].[EQ_Contract_note_details_sept]
+union 
+select * from [dbo].[EQ_Contract_note_details_Oct]
+union 
+select * from [dbo].[EQ_Contract_note_details_Nov]
+union
+select * from [dbo].[EQ_Contract_note_details_Dec]
+union 
+select * from [dbo].[EQ_Contract_note_details_Jan]
+union 
+select * from [dbo].[EQ_Contract_note_details_Feb]
+union 
+select * from [dbo].[EQ_Contract_note_details_Mar]
+
+
+----- Q1 -----
+select * into EQ_contract_note_details_All_records_Q1 
+from EQ_Contract_note_details_April 
+union 
+select * from EQ_Contract_note_details_May
+union 
+select * from [dbo].[EQ_Contract_note_details_June]
+
+----- Q2 -----
+select * into EQ_contract_note_details_All_records_Q2
+from EQ_Contract_note_details_July 
+union 
+select * from EQ_Contract_note_details_August
+union 
+select * from [dbo].[EQ_Contract_note_details_sept]
+
+----- Q3 -----
+select * into EQ_contract_note_details_All_records_Q3
+from EQ_Contract_note_details_Oct 
+union 
+select * from EQ_Contract_note_details_Nov
+union 
+select * from [dbo].[EQ_Contract_note_details_Dec]
+
+
+----- Q4 -----
+select * into EQ_contract_note_details_All_records_Q4
+from EQ_Contract_note_details_Jan
+union 
+select * from EQ_Contract_note_details_Feb
+union 
+select * from [dbo].[EQ_Contract_note_details_Mar]
+
